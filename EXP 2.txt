@@ -1,0 +1,18 @@
+%{
+%}
+
+%%
+
+[aeiouAEIOU] {printf("\nGiven character is vowel\n");}
+
+[a-zA-Z].+ {printf("\nGiven character is not a vowel\n");}
+
+%%
+int yywrap(void) {}
+
+int main()
+{
+   printf("\nEnter a character : ");
+   yylex();
+
+}
